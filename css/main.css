@@ -1,0 +1,161 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.bg-image {
+  background-image: url("../images/Burple-web-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Burple Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #290029;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 200px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.burger-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #ccc;
+}
+
+.mobile-nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+.burger-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.burger-icon {
+  width: 24px;
+  height: 24px;
+}
+/* Burple Gallery section */
+.gallery-section {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.gallery-title {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-description {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.gallery-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+
+/* Burple Footer styles */
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  color: white;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .mobile-nav-links.hidden {
+    display: none;
+  }
+  .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #290029;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 110px;
+  }
+  .gallery-image {
+    width: 100%;
+  }
+}
